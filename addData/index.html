@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Themed Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Matrix Canvas Background -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- Form Section -->
+
+  
+  <div class="form-wrapper">
+    <div class="form-container">
+      <h1 class="form-title">🔍 Add New Data</h1>
+      <form id="addDataForm">
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Father's Name" required>
+        <input type="text" placeholder="Mother's Name" required>
+        <select required>
+          <option value="" disabled selected>Select College</option>
+          <option value="College A">College A</option>
+          <option value="College B">College B</option>
+          <option value="College C">College C</option>
+        </select>
+        <select required>
+          <option value="" disabled selected>Select Session</option>
+          <option value="2022-2025">2022-2025</option>
+          <option value="2023-2026">2023-2026</option>
+          <option value="2024-2027">2024-2027</option>
+        </select>
+        <select required>
+          <option value="" disabled selected>Select Course</option>
+          <option value="BCA">BCA</option>
+          <option value="BBA">BBA</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" placeholder="Examination Roll Number" required>
+        <select required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" placeholder="Address" required>
+        <input type="tel" placeholder="Mobile Number" required>
+        <input type="date" placeholder="Date of Birth" required>
+        <input type="text" placeholder="Registration Number" required>
+        <select required>
+          <option value="" disabled selected>Category</option>
+          <option value="General">General</option>
+          <option value="OBC">OBC</option>
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+        </select>
+        <input type="text" placeholder="Class Roll Number" required>
+        <button type="submit" class="submit-btn">➕ Add Data</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

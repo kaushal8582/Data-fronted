@@ -1,0 +1,107 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    color: #00ff00;
+    overflow: hidden;
+}
+
+/* Matrix Effect Canvas */
+#matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: black;
+}
+
+/* Login Container */
+.login-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* Login Box */
+.login-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+    box-shadow: 0 0 20px #00ff00, 0 0 50px #004d00;
+}
+
+/* Title */
+.glow-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 5px #00ff00, 
+        0 0 10px #00ff00, 
+        0 0 20px #00ff00, 
+        0 0 40px #004d00, 
+        0 0 80px #004d00;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #00ff00;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    background: black;
+    color: #00ff00;
+    font-size: 1rem;
+    text-shadow: 0 0 5px #00ff00;
+    outline: none;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #004d00;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00ff00;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 5px #004d00;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #004d00;
+}

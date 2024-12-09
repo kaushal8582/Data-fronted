@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Filter Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Matrix Canvas Background -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="filter-section">
+      <input type="text" id="name" placeholder="Name" >
+      <select required>
+        <option value="" disabled selected>Select College</option>
+        <option value="B.M.D. College, Dayalpur, Vaishali">B.M.D. College, Dayalpur, Vaishali</option>
+        <option value="C.N. College, Sahebganj, Muzaffarpur">C.N. College, Sahebganj, Muzaffarpur</option>
+        <option value="Deo Chand College, Hajipur, Vaishali">Deo Chand College, Hajipur, Vaishali</option>
+        <option value="Dr. R.M.L.S. College, Muzaffarpur">Dr. R.M.L.S. College, Muzaffarpur</option>
+        <option value="Dr. Shri Krishn Sinha Women's College, Motihari">Dr. Shri Krishn Sinha Women's College, Motihari</option>
+        <option value="Examination Hall, B.R.A.Bihar University, Muzaffarpur">Examination Hall, B.R.A.Bihar University, Muzaffarpur</option>
+        <option value="J.B.S.D. College, Bakuchi, Muzaffarpur">J.B.S.D. College, Bakuchi, Muzaffarpur</option>
+        <option value="J.L.N.M. College, Ghorasahan (E.Champaran)">J.L.N.M. College, Ghorasahan (E.Champaran)</option>
+        <option value="J.S. College, Chandauli">J.S. College, Chandauli</option>
+        <option value="Jamuni Lal College, Hajipur">Jamuni Lal College, Hajipur</option>
+        <option value="Jeewachh College, Motipur, Muzaffarpur">Jeewachh College, Motipur, Muzaffarpur</option>
+        <option value="K.C.T.C. College, Raxaul (E.Champaran)">K.C.T.C. College, Raxaul (E.Champaran)</option>
+        <option value="L.N. College, Bhagwanpur, Vaishali">L.N. College, Bhagwanpur, Vaishali</option>
+        <option value="L.N.D. College, Motihari">L.N.D. College, Motihari</option>
+        <option value="L.N.T.College, Muzaffarpur">L.N.T.College, Muzaffarpur</option>
+        <option value="L.S.College, Muzaffarpur">L.S.College, Muzaffarpur</option>
+        <option value="M.D.D.M College, Muzaffarpur">M.D.D.M College, Muzaffarpur</option>
+        <option value="M.J.K. College, Bettiah">M.J.K. College, Bettiah</option>
+        <option value="M.P.S. Science College, Muzaffarpur">M.P.S. Science College, Muzaffarpur</option>
+        <option value="M.S. College, Motihari">M.S. College, Motihari</option>
+        <option value="M.S.K.B. College, Muzaffarpur">M.S.K.B. College, Muzaffarpur</option>
+        <option value="M.S.S.G. College, Areraj, E.Champaran">M.S.S.G. College, Areraj, E.Champaran</option>
+        <option value="Muneshwar Singh Muneshwari Samta Mahavidyalaya, Jandaha (Vaishali)">Muneshwar Singh Muneshwari Samta Mahavidyalaya, Jandaha (Vaishali)</option>
+        <option value="Nitishwar Mahavidyalaya, Muzaffarpur">Nitishwar Mahavidyalaya, Muzaffarpur</option>
+        <option value="R.B.B.M College, Muzaffarpur">R.B.B.M College, Muzaffarpur</option>
+        <option value="R.C. College, Sakra, Muzaffarpur">R.C. College, Sakra, Muzaffarpur</option>
+        <option value="R.D.S. College, Muzaffarpur">R.D.S. College, Muzaffarpur</option>
+        <option value="R.L.S.Y.College, Bettiah">R.L.S.Y.College, Bettiah</option>
+        <option value="R.N. College, Hajipur">R.N. College, Hajipur</option>
+        <option value="R.P.S. College, Chakeyaj, Vaishali">R.P.S. College, Chakeyaj, Vaishali</option>
+        <option value="R.S.S. Mahila College, Sitamarhi">R.S.S. Mahila College, Sitamarhi</option>
+        <option value="R.S.S. Science College, Sitamarhi">R.S.S. Science College, Sitamarhi</option>
+        <option value="Rajkiya Degree Mahavidyalaya, Pakridayal, East Champaran">Rajkiya Degree Mahavidyalaya, Pakridayal, East Champaran</option>
+        <option value="Rajkiya Degree Mahavidyalaya, Sheohar">Rajkiya Degree Mahavidyalaya, Sheohar</option>
+        <option value="Rameshwar Mahavidyalaya, Muzaffarpur">Rameshwar Mahavidyalaya, Muzaffarpur</option>
+        <option value="S.L.K. College, Sitamarhi">S.L.K. College, Sitamarhi</option>
+        <option value="S.N.S. College, Motihari">S.N.S. College, Motihari</option>
+        <option value="S.R.A.P. College, Barachakia, E.Champaran">S.R.A.P. College, Barachakia, E.Champaran</option>
+        <option value="S.R.K.G. College, Sitamarhi">S.R.K.G. College, Sitamarhi</option>
+        <option value="S.R.P.S. College, Jaintpur, Muzaffarpur">S.R.P.S. College, Jaintpur, Muzaffarpur</option>
+        <option value="Sub Divisional Goverment Degree College, Bagha, West Champaran">Sub Divisional Goverment Degree College, Bagha, West Champaran</option>
+        <option value="T.P. Verma College, Narkatiaganj, W.Champaran">T.P. Verma College, Narkatiaganj, W.Champaran</option>
+        <option value="Vaishali Mahila College, Hajipur">Vaishali Mahila College, Hajipur</option>
+      </select>
+      
+      <select required>
+        <option value="" disabled selected>Select Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>  
+        <option value="">Other</option>
+      </select>
+      <select required>
+        <option value="" disabled selected>Select Course</option>
+        <option value="1">1</option>
+        <option value="2">2</option>  
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      
+      <button class="find-btn" id="findButton">🔍 Find Data</button>
+    </div>
+    
+    <!-- Display data vertically in blocks -->
+    <div class="data-container" id="dataContainer">
+      <!-- Data will be displayed here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
